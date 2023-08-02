@@ -1,11 +1,144 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="zxx">
+
+<%- include('partials/head', {
+  title : 'Home'
+}) %>
+
+<body class="home">
+
+  <%- include('partials/header') %>
+
+  <div class="home__banner">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active home__banner--box-image"
+          style="background-image: url('/images/banner/Banner-01-.jpg');">
+        </div>
+        <div class="carousel-item home__banner--box-image" style="background-image: url('/images/banner/Banner-02-.jpg');">
+        </div>
+        <div class="carousel-item home__banner--box-image" style="background-image: url('/images/banner/Banner-03-.jpg');">
+        </div>
+        <div class="carousel-item home__banner--box-image" style="background-image: url('/images/banner/Banner-04-.jpg');">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="home__box">
+    <main class="home__main">
+      <article class="home__main__article">
+        <img src="/images/img-phone-01.jpg" alt="phone-01">
+        <div class="home__main__article--description">
+          <h4>nombre del producto</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, rem?
+          </p>
+          <a href="">ver más</a>
+        </div>
+
+      </article>
+      <article class="home__main__article">
+        <img src="/images/img-phone-02.jpg" alt="phone-02">
+        <div class="home__main__article--description">
+          <h4>nombre del producto</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, rem?
+          </p>
+          <a href="">ver más</a>
+        </div>
+
+      </article>
+      <article class="home__main__article">
+        <img src="/images/img-phone-03.jpg" alt="phone-03">
+        <div class="home__main__article--description">
+          <h4>nombre del producto</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, rem?
+          </p>
+          <a href="">ver más</a>
+        </div>
+
+      </article>
+      <article class="home__main__article">
+        <img src="/images/img-phone-01.jpg" alt="phone-01">
+        <div class="home__main__article--description">
+          <h4>nombre del producto</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, rem?
+          </p>
+          <a href="">ver más</a>
+        </div>
+
+      </article>
+      <article class="home__main__article">
+        <img src="/images/img-phone-02.jpg" alt="phone-02">
+        <div class="home__main__article--description">
+          <h4>nombre del producto</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, rem?
+          </p>
+          <a href="">ver más</a>
+        </div>
+
+      </article>
+      <article class="home__main__article">
+        <img src="/images/img-phone-03.jpg" alt="phone-03">
+        <div class="home__main__article--description">
+          <h4>nombre del producto</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, rem?
+          </p>
+          <a href="">ver más</a>
+        </div>
+      </article>
+    </main>
+    <aside class="home__aside">
+      <section class="home__aside__section">
+        <h3>Tutoriales</h3>
+        <article class="home__aside__section-article">
+          <img src="/images/aside-01.jpg" alt="titulo del tutorial de reparacion">
+          <h5>titulo del tutorial de reparacion</h5>
+        </article>
+        <article class="home__aside__section-article">
+          <img src="/images/aside-02.jpg" alt="titulo del tutorial de reparacion">
+          <h5>titulo del tutorial de reparacion</h5>
+        </article>
+        <article class="home__aside__section-article">
+          <img src="/images/aside-03.jpg" alt="titulo del tutorial de reparacion">
+          <h5>titulo del tutorial de reparacion</h5>
+        </article>
+        <article class="home__aside__section-article">
+          <img src="/images/aside-04.jpg" alt="titulo del tutorial de reparacion">
+          <h5>titulo del tutorial de reparacion</h5>
+        </article>
+      </section>
+      <section class="home__aside__section">
+        <h3>publicidad</h3>
+        <div class="home__aside__section--ads">
+          <img src="/images/publicidad-01.jpg" alt="ad-01">
+          <img src="/images/publicidad-02.jpg" alt="ad-02">
+        </div>
+      </section>
+    </aside>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="/javascripts/glider.js"></script>
+</body>
+
 </html>
