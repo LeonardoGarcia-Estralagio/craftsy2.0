@@ -35,6 +35,20 @@
   background-color: orangered;
 }
 
+.home__main__article {
+  position: relative;
+}
+
+.home__main__article--discount {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
 .home__aside__section h3 {
   background-color: white;
   padding: 10px;
