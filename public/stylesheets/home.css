@@ -94,6 +94,19 @@
   width: 100%;
 }
 
+.home__carousel__article {
+  width: 90%;
+  background-color: #ffffff;
+  height: 220px;
+}
+.home__carousel__article img {
+  width: 100%;
+}
+.home__carousel__article h4 {
+  margin: 20px 0;
+  text-align: center;
+}
+
 @media (min-width: 481px) {
   .home__main {
     display: flex;
