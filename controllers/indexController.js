@@ -7,5 +7,11 @@ module.exports = {
             tutorials,
             products : products.filter(product => product.discount > 0)
         })
+    },
+    admin : (req,res) => {
+        return res.render('admin', {
+            products,
+            tutorials
+        })
     }
 }

@@ -18,6 +18,7 @@
     {
         "id": 3,
         "name": "Nokia 1100",
+        "brand" : null,
         "description": "Lorem ipsun dolor asent sit",
         "price": 50,
         "discount": 2,
