@@ -1,12 +1,12 @@
 var express = require('express');
 var router = express.Router();
 
-const usersController = require('../controllers/usersController');
+const {register, login, profile} = require('../controllers/usersController');
 
 
 /* /user */
-router.get('/register', usersController.register);
-router.get('/login', usersController.login);
-router.get('/profile', usersController.profile);
+router.get('/register', register);
+router.get('/login', login);
+router.get('/profile', profile);
 
 module.exports = router;
