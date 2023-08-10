@@ -13,20 +13,19 @@
                 <h4 class="card-title">Editar producto</h4>
               </div>
               <div class="card-body">
-                <form action="" method="POST" class="row">
+                <form action="/products/update/<%= id %>?_method=PUT" method="POST" class="row">
                   <div class="col-12 col-md-6 mb-3">
                     <label for="formGroupExampleInput" class="form-label">Nombre</label>
                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre del producto"
-                      name="name" value="name">
+                      name="name" value="<%= name %>">
                   </div>
                   <div class="col-12 col-md-6 mb-3">
                     <label for="formGroupExampleInput2" class="form-label">Marca</label>
                     <select class="form-select" aria-label="Default select example" name="brand">
-                      <option selected hidden>Seleccione...</option>
                       <% brands.forEach(item=> { %>
-                        <option <%= item.name === item && 'selected' %> value="<%= item.name %>"><%= item.name %></option>
+                        <option <%=item.name===brand && 'selected' %> value="<%= item.name %>"><%= item.name %>
+                        </option>
                         <% }) %>
-
 
                     </select>
                   </div>

@@ -1,51 +1,92 @@
 [
-    {
-        "id": 1,
-        "name": "Iphone 11",
-        "description": "Lorem ipsun dolor asent sit",
-        "price": 200,
-        "discount": 10,
-        "image": "img-phone-01.jpg"
-    },
-    {
-        "id": 2,
-        "name": "Samsung S20",
-        "description": "Lorem ipsun dolor asent sit",
-        "price": 150,
-        "discount": 5,
-        "image": "img-phone-02.jpg"
-    },
-    {
-        "id": 3,
-        "name": "Nokia 1100",
-        "brand" : null,
-        "description": "Lorem ipsun dolor asent sit",
-        "price": 50,
-        "discount": 2,
-        "image": "img-phone-03.jpg"
-    },
-    {
-        "id": 4,
-        "name": "Motorola X",
-        "description": "Lorem ipsun dolor asent sit",
-        "price": 120,
-        "discount": 20,
-        "image": "img-phone-01.jpg"
-    },
-    {
-        "id": 5,
-        "name": "Nokia 2.3",
-        "description": "Lorem ipsun dolor asent sit",
-        "price": 300,
-        "discount": 15,
-        "image": "img-phone-02.jpg"
-    },
-    {
-        "id": 6,
-        "name": "Motorola V3",
-        "description": "Lorem ipsun dolor asent sit",
-        "price": 20,
-        "discount": 10,
-        "image": "img-phone-03.jpg"
-    }
+   {
+      "id": "aa5cf41d-ab52-40a2-a787-8a013c4bb741",
+      "name": "Iphone 11",
+      "brand": "Apple",
+      "description": "Lorem ipsun dolor asent sit",
+      "price": "200",
+      "discount": "10",
+      "image": "img-phone-01.jpg"
+   },
+   {
+      "id": "aa5cf41d-ab52-40a2-a787-8a013c4bb742",
+      "name": "Samsung S20",
+      "brand": "Samsung",
+      "description": "Lorem ipsun dolor asent sit",
+      "price": 150,
+      "discount": 5,
+      "image": "img-phone-02.jpg"
+   },
+   {
+      "id": "aa5cf41d-ab52-40a2-a787-8a013c4bb743",
+      "name": "Nokia 1100",
+      "brand": "Nokia",
+      "description": "Lorem ipsun dolor asent sit",
+      "price": 50,
+      "discount": 2,
+      "image": "img-phone-03.jpg"
+   },
+   {
+      "id": "aa5cf41d-ab52-40a2-a787-8a013c4bb744",
+      "name": "Motorola X",
+      "brand": "Motorola",
+      "description": "Lorem ipsun dolor asent sit",
+      "price": 120,
+      "discount": 20,
+      "image": "img-phone-01.jpg"
+   },
+   {
+      "id": "aa5cf41d-ab52-40a2-a787-8a013c4bb745",
+      "name": "Nokia 2.3",
+      "brand": "Nokia",
+      "description": "Lorem ipsun dolor asent sit",
+      "price": 300,
+      "discount": 15,
+      "image": "img-phone-02.jpg"
+   },
+   {
+      "id": "aa5cf41d-ab52-40a2-a787-8a013c4bb746",
+      "name": "Motorola V3",
+      "brand": "Motorola",
+      "description": "Lorem ipsun dolor asent sit",
+      "price": 20,
+      "discount": 10,
+      "image": "img-phone-03.jpg"
+   },
+   {
+      "id": "aa5cf41d-ab52-40a2-a787-8a013c4bb740",
+      "name": "Nokia 1100",
+      "brand": "Nokia",
+      "price": 100,
+      "discount": 5,
+      "description": "Irrompible!!!",
+      "createdAt": "2023-08-10T18:14:42.912Z"
+   },
+   {
+      "id": "22e14e0e-19be-4ce7-8c3d-ba001e9aefaa",
+      "name": "Huawei Y7",
+      "brand": "Huawei",
+      "price": "300",
+      "discount": "15",
+      "description": "Lorem ipsun dolor asent sit",
+      "createdAt": "2023-08-10T19:20:43.096Z"
+   },
+   {
+      "id": "3a5a8822-b94d-45aa-bce6-50bfb2d72c34",
+      "name": "Asus ROG",
+      "brand": "Asus",
+      "price": 350,
+      "discount": 30,
+      "description": "Lorem ipsun dolor asent sit",
+      "createdAt": "2023-08-10T19:22:37.271Z"
+   },
+   {
+      "id": "b0760831-6928-4285-a38f-fab329029ecc",
+      "name": "Xiaomi redmi",
+      "brand": "Xiaomi",
+      "price": "150",
+      "discount": "10",
+      "description": "Lorem ipsun dolor asent sit",
+      "createdAt": "2023-08-10T19:26:19.887Z"
+   }
 ]

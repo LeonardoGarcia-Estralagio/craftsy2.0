@@ -48,24 +48,21 @@
       <div class="home__box">
         <main class="home__main">
           <% products.forEach(product=> { %>
-            <article class="home__main__article">
-              <img src="/images/<%= product.image %>" alt="phone-01">
-              <div class="home__main__article--description">
-                <h4>
-                  <%= product.name %>
-                </h4>
-                <p>
-                  <%= product.description %>
-                </p>
-                <a href="">ver más</a>
-              </div>
-              <h3 class="home__main__article--discount">
-                <%= product.discount %>%
-              </h3>
-            </article>
-            <% }) %>
+            <% if (product.discount> 0) { %>
+              <article class="home__main__article">
+                <img src="/images/<%= product.image %>" alt="phone-01">
+                <div class="home__main__article--description">
+                  <h4><%= product.name %></h4>
+                  <p><%= product.description %></p>
+                  <a href="/products/detail/<%= product.id %>">ver más</a>
+                </div>
+                <h3 class="home__main__article--discount"><%= product.discount %>%</h3>
+              </article>
+              <% } %>
 
+          <% }) %>
         </main>
+        
         <aside class="home__aside">
           <section class="home__aside__section">
             <h3>Tutoriales</h3>

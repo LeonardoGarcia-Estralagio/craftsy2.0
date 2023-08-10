@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-<%- include('partials/head', { title : 'Home' }) %>
+<%- include('partials/head', { title : 'Admin' }) %>
 
     <body class="home">
         <%- include('partials/header') %>
@@ -66,8 +66,7 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <% products.forEach(({ id ,name, brand, price,discount, image,
-                                                        description},index + 1)=> { %>
+                                                    <% products.forEach(({id, name, brand, price, discount, image, description},index)=> { %>
                                                         <tr>
                                                             <th scope="row">
                                                                 <%= index + 1%>
@@ -76,7 +75,7 @@
                                                                 <%= name %>
                                                             </td>
                                                             <td>
-                                                                <%= brand %>
+                                                                <%= brand ? brand : "Sin especificar" %>
                                                             </td>
                                                             <td>
                                                                 <%= price + ' $' %>
@@ -138,7 +137,7 @@
                                                                         </div>
                                                                     </div>
 
-                                                                    <a href="/products/edit/ "
+                                                                    <a href="/products/edit/<%= id %>"
                                                                         class="btn btn-sm btn-success">
                                                                         <i class="fas fa-edit"></i>
                                                                     </a>

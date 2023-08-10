@@ -4,13 +4,16 @@ module.exports = {
     index : (req,res) => {
         const tutorials = readJSON('tutorials.json')
         const products = readJSON('products.json')
-       
-        return res.render('index', {
+
+        return res.render('index',{
             tutorials,
-            products : products.filter(product => product.discount > 0)
+            products
         })
     },
     admin : (req,res) => {
+        const tutorials = readJSON('tutorials.json')
+        const products = readJSON('products.json')
+        
         return res.render('admin', {
             products,
             tutorials
