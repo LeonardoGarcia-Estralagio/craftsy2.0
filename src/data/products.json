@@ -13,8 +13,8 @@
       "name": "Samsung S20",
       "brand": "Samsung",
       "description": "Lorem ipsun dolor asent sit",
-      "price": 150,
-      "discount": 5,
+      "price": "150",
+      "discount": "5",
       "image": "img-phone-02.jpg"
    },
    {

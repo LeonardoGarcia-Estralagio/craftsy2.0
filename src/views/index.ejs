@@ -50,7 +50,7 @@
           <% products.forEach(product=> { %>
             <% if (product.discount> 0) { %>
               <article class="home__main__article">
-                <img src="/images/<%= product.image %>" alt="phone-01">
+                <img src="/images/<%= product.image ? product.image : 'img-phone-01.jpg' %>" alt="phone-01">
                 <div class="home__main__article--description">
                   <h4><%= product.name %></h4>
                   <p><%= product.description %></p>
