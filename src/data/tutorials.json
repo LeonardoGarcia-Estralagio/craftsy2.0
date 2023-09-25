@@ -1,22 +1,26 @@
 [
     {
-        "id": 1,
-        "name": "tutorial de js",
-        "image": "aside-01.jpg"
+        "id" : 1,
+        "name" : "Tutorial de JS",
+        "image" : "aside-01.jpg",
+        "message" : "10% OFF"
     },
     {
-        "id": 2,
-        "name": "tutorial de node",
-        "image": "aside-02.jpg"
+        "id" : 2,
+        "name" : "Tutorial de NodeJS",
+        "image" : "aside-02.jpg",
+        "message" : "30% OFF"
     },
     {
-        "id": 3,
-        "name": "tutorial de express",
-        "image": "aside-03.jpg"
+        "id" : 3,
+        "name" : "Tutorial de Express",
+        "image" : "aside-03.jpg",
+        "message" : "20% OFF"
     },
     {
-        "id": 4,
-        "name": "tutorial de json",
-        "image": "aside-04.jpg"
+        "id" : 4,
+        "name" : "Tutorial de JSON",
+        "image" : "aside-04.jpg",
+        "message" : "50% OFF"
     }
 ]

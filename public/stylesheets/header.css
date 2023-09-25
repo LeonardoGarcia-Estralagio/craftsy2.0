@@ -13,8 +13,8 @@
 .home__header--top button {
   background: none;
   border: none;
-  color: white;
-  border: solid 1px white;
+  color: #ffffff;
+  border: solid 1px #ffffff;
   border-radius: 2px;
   padding: 8px;
   line-height: 0;
@@ -26,14 +26,22 @@
   text-transform: uppercase;
 }
 
+.home__header--menu {
+  display: none;
+}
+
+.showMenu {
+  display: block;
+}
+
 @media (min-width: 481px) {
+
   /* HEADER */
   .home__header {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
   }
-
   .home__header--bars {
     display: none;
   }
