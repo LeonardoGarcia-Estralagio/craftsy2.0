@@ -84,7 +84,7 @@
                                                 </thead>
                                                 <tbody>
                                                     <% products.forEach(({id, name, brand, section, price, discount,
-                                                        images, description},index)=> { %>
+                                                        images, image, description},index)=> { %>
                                                         <tr>
                                                             <th scope="row">
                                                                 <%= index + 1 %>
@@ -118,7 +118,7 @@
                                                                     </button>
 
                                                                     <%- include('partials/modalProductDetail',{ id,
-                                                                        name, price, discount, description, images })%>
+                                                                        name, price, discount, description, images, image })%>
 
                                                                         <a href="/products/edit/<%= id %>"
                                                                             class="btn btn-sm btn-success">

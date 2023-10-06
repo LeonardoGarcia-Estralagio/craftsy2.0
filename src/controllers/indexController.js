@@ -1,37 +1,50 @@
-const {readJSON} = require('../data');
-const db = require('../database/models');
+const { readJSON } = require("../data");
+const db = require("../database/models");
 
 module.exports = {
-    index : (req,res) => {
-
-        const tutorials = readJSON('tutorials.json');
-        const products = readJSON('products.json');
-
-        return res.render('index',{
-            tutorials,
-            products
+  index: (req, res) => {
+    const tutorials = db.Tutorial.findAll();
+    const sections = db.Section.findAll({
+      include: [
+        {
+            association: 'products',
+            include: [
+                {
+                    all: true
+                }
+            ]
+        }
+    ],
+    })
+    Promise.all([tutorials,sections])
+        .then(([tutorials,sections]) => {
+            
+            return res.render("index", {
+                tutorials,
+                sections
+              })
         })
-    },
-    admin : (req,res) => {
+        .catch(error => console.log(error))
 
-        const tutorials = db.Tutorial.findAll();
-        const products = db.Product.findAll({
-            include: ['brand', 'section', 'images']
+    
+  },
+  admin: (req, res) => {
+    const tutorials = db.Tutorial.findAll();
+    const products = db.Product.findAll({
+      include: ["brand", "section", "images"],
+    });
+    const brands = db.Brand.findAll({
+      order: ["name"],
+    });
+
+    Promise.all([tutorials, products, brands])
+      .then(([tutorials, products, brands]) => {
+        return res.render("admin", {
+          products,
+          tutorials,
+          brands,
         });
-        const brands = db.Brand.findAll({
-            order: ['name']
-        })
-
-        Promise.all([tutorials,products, brands])
-          .then(([tutorials,products, brands]) => {
-            return res.render('admin', {
-            products,
-            tutorials,
-            brands
-        })
-          })
-          .catch(error => console.log(error))
-        
-        
-    }
-}
+      })
+      .catch((error) => console.log(error));
+  },
+};
